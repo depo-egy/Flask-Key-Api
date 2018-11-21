@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+
+ <center><h1>Search for a user</h1> </center>
+
+ <form method="POST" action="" >
+   {{ form.hidden_tag() }}
+
+  {{ form.submit(class="btn btn-outline-info") }}
+
+ </form>
+
+
+
+{% endblock content %}

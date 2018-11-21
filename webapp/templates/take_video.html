@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<div class="form-group">
+<img src="loading.jpg", id ="loading_img" , alt="loading",style="visibilty:hidden;">
+  <form method="POST" action=""  >
+    {{ form.hidden_tag() }}
+
+   {{ form.submit(class="btn btn-outline-info" ) }}
+
+
+  </form>
+
+
+</div>
+
+
+<script >
+document.getElementsByClass('btn btn-outline-info').addEventListener("click", function(){ 
+  var img = document.getElementById("loading_img");
+ img.style.visibilty= 'visible'; });
+
+
+</script>
+  {% endblock content %}
